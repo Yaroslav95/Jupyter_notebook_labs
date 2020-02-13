@@ -1,0 +1,51 @@
+Pandas — это библиотека Python, предоставляющая широкие возможности для анализа данных. Данные, с которыми работают датасаентисты, часто хранятся в форме табличек — например, в форматах .csv, .tsv или .xlsx. 
+C помощью библиотеки Pandas такие табличные данные очень удобно загружать, обрабатывать и анализировать с помощью SQL-подобных запросов. А в связке с библиотеками Matplotlib и Seaborn Pandas предоставляет широкие возможности визуального анализа табличных данных.
+1)	Dataframe, Series, Index
+Основными структурами данных в Pandas являются классы Series и DataFrame
+Series - представляет собой одномерный индексированный массив данных некоторого фиксированного типа
+Dataframe - это двухмерная структура данных, представляющая собой таблицу, каждый столбец которой содержит данные одного типа. Можно представлять её как словарь объектов типа Series. Структура DataFrame отлично подходит для представления реальных данных: строки соответствуют признаковым описаниям отдельных объектов, а столбцы соответствуют признакам
+https://pandas.pydata.org/pandas-docs/stable/
+https://books.google.ru/books?id=t4Q_DwAAQBAJ&pg=PA4&lpg=PA4&dq=Python+Data+Science+Handbook+Jake+VanderPlas+%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4+%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C&source=bl&ots=KqkN70v_jg&sig=ACfU3U0UqLxmtY5jH689U-XV1ki7SqGdaA&hl=ru&sa=X&ved=2ahUKEwiXpdS2ucjkAhX8AxAIHRlQCWAQ6AEwBHoECAkQAQ#v=onepage&q=Python%20Data%20Science%20Handbook%20Jake%20VanderPlas%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4%20%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C&f=false
+https://tanthiamhuat.files.wordpress.com/2018/04/pythondatasciencehandbook.pdf
+
+https://scikit-learn.org/stable/modules/classes.html
+ 
+Датасет титаника, отбор параметров https://towardsdatascience.com/feature-selection-in-python-recursive-feature-elimination-19f1c39b8d15
+
+https://towardsdatascience.com/learn-advanced-features-for-pythons-main-data-analysis-library-in-20-minutes-d0eedd90d086
+Аксессоры https://github.com/FBosler/you-datascientist/blob/master/Advanced%20Features.ipynb
+
+Catboost https://catboost.ai/docs/concepts/about.html
+https://catboost.ai/docs/concepts/python-reference_catboostclassifier.html
+
+
+---
+used this in cmd : python -m ipykernel install --user
+Создаём виртуальное окружение + создаем ядро. Назвать можно как угодно, не обязательно virtual_env
+*--
+conda create -n virtual_env -k -y ipykernel jupyter 
+conda activate virtual_env 
+python -m ipykernel install --user --name virtual_env --display-name="какое-нибудь название, которое будет отображаться в jupyter-е"
+Устанавливаем нужные либы:
+conda install -n virtual_env -k –y pandas numpy catboost 
+--------------------
+
+C:\Users\SapronovYD>C:\Users\SapronovYD\Documents\Programs\Python\Python37\python.exe -m venv venv
+C:\Users\SapronovYD>venv\Scripts\activate
+(venv) C:\Users\SapronovYD>pip install cx_Oracle
+Collecting cx_Oracle
+Could not fetch URL https://pypi.org/simple/cx-oracle/: There was a problem confirming the ssl certificate: HTTPSConnectionPool(host='pypi.org', port=443): Max retries exceeded with url: /simple/cx-oracle/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1076)'))) - skipping
+Прогрузка… Ошибки, убираем хосты
+(venv) C:\Users\SapronovYD>pip install --trusted-host pypi.org cx_Oracle
+(venv) C:\Users\SapronovYD>pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org cx_Oracle
+Collecting cx_Oracle
+(venv) C:\Users\SapronovYD>python
+(venv) C:\Users\SapronovYD>venv\Scripts\deactivate.bat
+
+https://scikit-learn.org/stable/modules/cross_validation.html#cross-validation
+
+/*************************************************************************/
+https://github.com/adv4000/Python-Lessons/tree/master/For-Beginners
+https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/preprocessing/_label.py
+https://www.youtube.com/watch?v=IPBSB1HLNLo&feature=youtu.be
+https://course.fast.ai/
